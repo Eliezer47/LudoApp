@@ -1,0 +1,28 @@
+<ion-header>
+    <ion-toolbar color="secondary" [class.show-background]="showToolbar">
+
+        <ion-title color="dark" text-capitalize class="ion-text-center">
+            LudoApp Esteli
+        </ion-title>
+
+
+    </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding" class="background" fullscreen (ionScroll)="onScroll($event)" [scrollEvents]="true">
+    <div class="centrar">
+        <ion-avatar fill="clear" id="inicio" routerLink="/inicio" shape="round" color="dark">
+            <img src="/assets/logo2.png">
+        </ion-avatar>
+
+    </div>
+
+</ion-content>
+<ion-footer>
+    <ion-toolbar>
+        <ion-title class="ion-text-center">UNAN-MANAGUA FAREM-ESTELI</ion-title>
+        <ion-buttons slot="end">
+            <ion-back-button defaultHref="/"></ion-back-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-footer>
